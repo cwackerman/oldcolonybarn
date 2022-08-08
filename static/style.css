@@ -1,0 +1,66 @@
+@font-face {
+  font-family: Stranger;
+  font-weight: normal;
+  src: url(/fonts/Stranger.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: Stranger-Slim;
+  font-weight: normal;
+  src: url(/fonts/Stranger-Slim.woff2) format("woff2");
+}
+
+:root {
+  --color-brand-hsl: 332, 31%, 27%;
+  --color-brand: hsl(var(--color-brand-hsl));
+  --color-text-hsl: 0, 0%, 0%;
+  --color-text: hsl(var(--color-text-hsl));
+  --color-text-inverse-hsl: 0, 0%, 100%;
+  --color-text-inverse: hsl(var(--color-text-inverse-hsl));
+  --color-tint-hsl: 333, 12%, 85%;
+  --color-tint: hsl(var(--color-tint-hsl));
+  --color-page-hsl: 0, 0%, 100%;
+  --color-page: hsl(var(--color-page-hsl));
+}
+
+::selection {
+  background-color: var(--color-tint);
+  color: var(--color-brand);
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  align-items: center;
+  color: var(--color-text);
+  display: flex;
+  flex-direction: column;
+  font-family: sans-serif;
+  font-size: 16px;
+  line-height: 1.4;
+  margin: 0;
+}
+
+h1,
+h2 {
+  font-family: Stranger;
+  line-height: 1.16;
+  margin: 0;
+  margin-block: 1em 0.5em;
+  text-align: center;
+}
+
+h1 {
+  font-size: 3rem;
+  letter-spacing: 0.1em;
+}
+
+h2 {
+  font-family: Stranger-Slim;
+  font-size: 1.5rem;
+  font-weight: normal;
+  letter-spacing: 0.1em;
+}
