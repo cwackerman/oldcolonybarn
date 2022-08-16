@@ -16,6 +16,7 @@
 	"devDependencies": {
 		"@playwright/test": "^1.22.2",
 		"@sveltejs/adapter-auto": "next",
+		"@sveltejs/adapter-netlify": "^1.0.0-next.71",
 		"@sveltejs/kit": "next",
 		"@types/mapbox-gl": "^2.7.3",
 		"@typescript-eslint/eslint-plugin": "^5.27.0",
