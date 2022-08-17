@@ -6,12 +6,12 @@
 	type Masonry = Array<Array<URL>>;
 
 	const photos = Object.values(
-		import.meta.glob('../../../static/images/{Engagement,Summer Concerts,Wedding}/*.{jpg,jpeg}', {
+		import.meta.glob('./photos/{Engagement,Summer Concerts,Wedding}/*.{jpg,jpeg}', {
 			as: 'url',
 			eager: true
 		})
 	).map(function (path) {
-		return path.replace('/static', '');
+		return path.replace(new URL('./photos/', import.meta.url).pathname, '');
 	});
 
 	console.debug(photos);
@@ -23,7 +23,7 @@
 	const filters = new Set<string>();
 
 	for (const photo of photos) {
-		const folder = photo.split('/')[2];
+		const folder = photo.split('/')[0];
 		filters.add(folder);
 	}
 
@@ -32,7 +32,7 @@
 	function generateColumns() {
 		const items = photos.filter((photo) => {
 			for (const filter of activeFilters) {
-				if (photo.startsWith(`/images/${filter}`)) {
+				if (photo.startsWith(filter)) {
 					return true;
 				}
 			}
@@ -54,7 +54,7 @@
 		columnWidth = clientWidth / length;
 
 		columns = items.reduce(function (memo, photo, index) {
-			const url = new URL(photo, import.meta.url);
+			const url = new URL(`./photos/${photo}`, import.meta.url);
 			memo[index % length].push(url);
 			return memo;
 		}, Array.from({ length }, () => []) as Masonry);
