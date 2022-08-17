@@ -1,7 +1,6 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
 	import Container from '$lib/Container.svelte';
-	import Image from 'svimg';
 
 	type Masonry = Array<Array<URL>>;
 
@@ -13,8 +12,6 @@
 	).map(function (path) {
 		return path.replace(new URL('./photos/', import.meta.url).pathname, '');
 	});
-
-	console.debug(photos);
 
 	let clientWidth = 0;
 	let columnWidth = 0;

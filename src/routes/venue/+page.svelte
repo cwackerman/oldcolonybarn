@@ -1,6 +1,6 @@
 <script>
-	import Image from 'svimg';
 	import Container from '$lib/Container.svelte';
+	import barn from './barn.jpeg';
 </script>
 
 <svelte:head>
@@ -51,7 +51,7 @@
 		</article>
 
 		<aside>
-			<Image src="images/barn.jpeg" />
+			<img src={barn} />
 		</aside>
 	</div>
 </Container>
