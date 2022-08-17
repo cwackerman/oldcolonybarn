@@ -1,5 +1,7 @@
 <script type="ts">
 	import Container from '$lib/Container.svelte';
+	import { toasts } from '$lib/Toaster.svelte';
+	let submitting = false;
 </script>
 
 <svelte:head>
@@ -10,27 +12,54 @@
 	<h1>Contact</h1>
 
 	<form
-		action="https://formkeep.com/f/815ca1ef907a"
+		action="https://script.google.com/macros/s/AKfycbxen_IGrnOCbss7apckNd1ZrTMSIdOCRXaFpnnNCqArSHqZRgNX7dDeQNntuT8rbsR5Lg/exec"
 		accept-charset="UTF-8"
+		disabled={submitting ? true : undefined}
 		enctype="multipart/form-data"
 		method="POST"
+		on:submit={async (event) => {
+			event.preventDefault();
+			submitting = true;
+			const form = event.currentTarget;
+			try {
+				await fetch(form.action, {
+					method: form.method,
+					body: new FormData(form)
+				});
+				form.reset();
+				toasts.add({
+					duration: 5000,
+					level: 'success',
+					message: 'Thanks for your submission!'
+				});
+			} catch (error) {
+				console.error(error);
+				toasts.add({
+					duration: 5000,
+					level: 'error',
+					message: 'Something went wrong. Please try again.'
+				});
+			} finally {
+				submitting = false;
+			}
+		}}
 	>
 		<div class="row">
 			<label for="name">
 				<span>Name(s)</span>
-				<input type="text" id="name" autocomplete="name" required />
+				<input type="text" id="name" name="name" autocomplete="name" required />
 			</label>
 		</div>
 
 		<div class="row">
 			<label for="email">
 				<span>Email Address</span>
-				<input type="email" id="email" autocomplete="email" required />
+				<input type="email" id="email" name="email" autocomplete="email" required />
 			</label>
 
 			<label for="phone">
 				<span>Phone Number</span>
-				<input type="text" id="phone" autocomplete="tel" />
+				<input type="tel" id="phone" name="phone" autocomplete="tel" />
 			</label>
 		</div>
 
@@ -42,20 +71,20 @@
 					<option>Fundraiser</option>
 				</datalist>
 				<span>Event Type</span>
-				<input type="text" id="type" list="event-type-suggestions" />
+				<input type="text" id="type" name="type" list="event-type-suggestions" />
 			</label>
 		</div>
 
 		<div class="row">
 			<label for="message">
 				<span>Message</span>
-				<textarea id="message" rows="3" required />
+				<textarea id="message" name="message" rows="3" required />
 			</label>
 		</div>
 
 		<footer class="row">
 			<!-- <button type="reset">Clear</button> -->
-			<button type="submit">Send</button>
+			<button type="submit">{submitting ? 'Sending...' : 'Send'}</button>
 		</footer>
 	</form>
 </Container>
@@ -67,6 +96,10 @@
 		flex-direction: column;
 		gap: var(--border-size);
 		margin-block: 2em;
+	}
+
+	form[disabled] {
+		opacity: 0.5;
 	}
 
 	.row {
