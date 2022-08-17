@@ -1,13 +1,13 @@
 @font-face {
   font-family: Stranger;
   font-weight: normal;
-  src: url(/fonts/Stranger.woff2) format("woff2");
+  src: url(./fonts/Stranger.woff2) format("woff2");
 }
 
 @font-face {
   font-family: Stranger-Slim;
   font-weight: normal;
-  src: url(/fonts/Stranger-Slim.woff2) format("woff2");
+  src: url(./fonts/Stranger-Slim.woff2) format("woff2");
 }
 
 :root {
