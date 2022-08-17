@@ -17,6 +17,7 @@ const config = {
 	],
 
 	kit: {
+		appDir: 'app',
 		adapter: adapter({
 			pages: "docs",
 			assets: "docs",
