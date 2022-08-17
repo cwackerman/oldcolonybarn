@@ -6,19 +6,19 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<link rel="icon" href="./favicon.ico" />
 	<meta http-equiv="content-security-policy" content=""><title>Home | The Barn at Old Colony</title>
-	<link rel="stylesheet" href="/app/immutable/assets/__layout-root-b0a9d23e.css">
-	<link rel="stylesheet" href="/app/immutable/assets/Toaster-aa6eb844.css">
-	<link rel="stylesheet" href="/app/immutable/assets/index@root-2a7e9165.css">
-	<link rel="stylesheet" href="/app/immutable/assets/Container-2600665b.css">
-	<link rel="stylesheet" href="/app/immutable/assets/PageHeader-db478966.css">
-	<link rel="modulepreload" href="/app/immutable/start-8cd4d739.js">
-	<link rel="modulepreload" href="/app/immutable/chunks/index-c6434da5.js">
-	<link rel="modulepreload" href="/app/immutable/chunks/index-a12b9fc6.js">
-	<link rel="modulepreload" href="/app/immutable/chunks/singletons-cdeec3fd.js">
-	<link rel="modulepreload" href="/app/immutable/pages/__layout-root.svelte-96c2255c.js">
-	<link rel="modulepreload" href="/app/immutable/chunks/Toaster-39f4e39f.js">
-	<link rel="modulepreload" href="/app/immutable/pages/index@root.svelte-3c434358.js">
-	<link rel="modulepreload" href="/app/immutable/chunks/PageHeader-9521f8a3.js">
+	<link href="/app/immutable/assets/+layout-root-b0a9d23e.css" rel="stylesheet">
+	<link href="/app/immutable/assets/Toaster-aa6eb844.css" rel="stylesheet">
+	<link href="/app/immutable/assets/+page@root-2a7e9165.css" rel="stylesheet">
+	<link href="/app/immutable/assets/Container-2600665b.css" rel="stylesheet">
+	<link href="/app/immutable/assets/PageHeader-db478966.css" rel="stylesheet">
+	<link rel="modulepreload" href="/app/immutable/start-5b657ccc.js">
+	<link rel="modulepreload" href="/app/immutable/chunks/index-8b5cb5d1.js">
+	<link rel="modulepreload" href="/app/immutable/chunks/index-7c1995e9.js">
+	<link rel="modulepreload" href="/app/immutable/chunks/singletons-a2babded.js">
+	<link rel="modulepreload" href="/app/immutable/components/pages/_layout-root.svelte-3a94352f.js">
+	<link rel="modulepreload" href="/app/immutable/chunks/Toaster-c52c3ee5.js">
+	<link rel="modulepreload" href="/app/immutable/components/pages/_page@root.svelte-a96e7375.js">
+	<link rel="modulepreload" href="/app/immutable/chunks/PageHeader-0d66db85.js">
 </head>
 
 <body>
@@ -69,23 +69,26 @@
 
 
 		<script type="module" data-sveltekit-hydrate="l2pzqn">
-		import { start } from "/app/immutable/start-8cd4d739.js";
+		import { set_public_env, start } from "/app/immutable/start-5b657ccc.js";
+
+		set_public_env({});
+
 		start({
 			target: document.querySelector('[data-sveltekit-hydrate="l2pzqn"]').parentNode,
 			paths: {"base":"","assets":""},
-			session: {},
 			route: true,
 			spa: false,
 			trailing_slash: "always",
 			hydrate: {
 				status: 200,
 				error: null,
-				nodes: [2, 10],
+				node_ids: [2, 4],
 				params: {},
-				routeId: "@root"
+				routeId: ""
 			}
 		});
 	</script>
+	
 </body>
 
 </html>
