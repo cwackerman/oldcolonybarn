@@ -4,15 +4,16 @@
 <head>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<link rel="icon" href="./favicon.ico" />
-	<link rel="stylesheet" href="./style.css" />
-	<meta http-equiv="content-security-policy" content=""><title>Contact | The Barn at Old Colony</title>
+	<link rel="icon" href="../favicon.ico" />
+	<link rel="stylesheet" href="../style.css" />
+	<meta http-equiv="content-security-policy" content=""><title>Photo Gallery | The Barn at Old Colony</title>
 	<link rel="stylesheet" href="/_app/immutable/assets/Toaster-aa6eb844.css">
 	<link rel="stylesheet" href="/_app/immutable/assets/__layout@root-38076f28.css">
 	<link rel="stylesheet" href="/_app/immutable/assets/PageHeader-db478966.css">
-	<link rel="stylesheet" href="/_app/immutable/assets/index-3cdee5e1.css">
+	<link rel="stylesheet" href="/_app/immutable/assets/__layout-2c4ed791.css">
+	<link rel="stylesheet" href="/_app/immutable/assets/Image-dd948dd1.css">
 	<link rel="stylesheet" href="/_app/immutable/assets/Container-2600665b.css">
-	<link rel="modulepreload" href="/_app/immutable/start-b1e521c9.js">
+	<link rel="modulepreload" href="/_app/immutable/start-21b28296.js">
 	<link rel="modulepreload" href="/_app/immutable/chunks/index-c6434da5.js">
 	<link rel="modulepreload" href="/_app/immutable/chunks/index-a12b9fc6.js">
 	<link rel="modulepreload" href="/_app/immutable/chunks/singletons-cdeec3fd.js">
@@ -20,8 +21,9 @@
 	<link rel="modulepreload" href="/_app/immutable/chunks/Toaster-39f4e39f.js">
 	<link rel="modulepreload" href="/_app/immutable/pages/__layout@root.svelte-b074ca62.js">
 	<link rel="modulepreload" href="/_app/immutable/chunks/PageHeader-9521f8a3.js">
-	<link rel="modulepreload" href="/_app/immutable/pages/contact/index.svelte-087061cb.js">
+	<link rel="modulepreload" href="/_app/immutable/pages/gallery/__layout.svelte-47bc06fb.js">
 	<link rel="modulepreload" href="/_app/immutable/chunks/Container-d99a9409.js">
+	<link rel="modulepreload" href="/_app/immutable/pages/gallery/index.svelte-ac35f98b.js">
 </head>
 
 <body>
@@ -50,27 +52,16 @@
 
 <main class="svelte-1v9lwgs">
 
-<div class="svelte-91yg0g"><h1>Contact</h1>
+<div class="svelte-91yg0g"><h1>Photo Gallery</h1>
+</div>
 
-	<form action="https://script.google.com/macros/s/AKfycbxen_IGrnOCbss7apckNd1ZrTMSIdOCRXaFpnnNCqArSHqZRgNX7dDeQNntuT8rbsR5Lg/exec" accept-charset="UTF-8"  enctype="multipart/form-data" method="POST" class="svelte-1a3uozb"><div class="row svelte-1a3uozb"><label for="name" class="svelte-1a3uozb"><span class="svelte-1a3uozb">Name(s)</span>
-				<input type="text" id="name" name="name" autocomplete="name" required class="svelte-1a3uozb"></label></div>
+<form class="svelte-n1l824"><input hidden id="immutable" type="checkbox" checked value="immutable" class="svelte-n1l824">
+		<label class="tag svelte-n1l824" for="immutable">immutable
+		</label></form>
 
-		<div class="row svelte-1a3uozb"><label for="email" class="svelte-1a3uozb"><span class="svelte-1a3uozb">Email Address</span>
-				<input type="email" id="email" name="email" autocomplete="email" required class="svelte-1a3uozb"></label>
+<div class="gallery svelte-n1l824"></div>
 
-			<label for="phone" class="svelte-1a3uozb"><span class="svelte-1a3uozb">Phone Number</span>
-				<input type="tel" id="phone" name="phone" autocomplete="tel" class="svelte-1a3uozb"></label></div>
-
-		<div class="row svelte-1a3uozb"><label for="type" class="svelte-1a3uozb"><datalist id="event-type-suggestions"><option value="Wedding">Wedding</option><option value="Reunion">Reunion</option><option value="Fundraiser">Fundraiser</option></datalist>
-				<span class="svelte-1a3uozb">Event Type</span>
-				<input type="text" id="type" name="type" list="event-type-suggestions" class="svelte-1a3uozb"></label></div>
-
-		<div class="row svelte-1a3uozb"><label for="message" class="svelte-1a3uozb"><span class="svelte-1a3uozb">Message</span>
-				<textarea id="message" name="message" rows="3" required class="svelte-1a3uozb"></textarea></label></div>
-
-		<footer class="row svelte-1a3uozb">
-			<button type="submit" class="svelte-1a3uozb">Send</button></footer></form>
-</div></main>
+</main>
 
 <footer class="svelte-3ofmds"><section><strong>The Barn at Old Colony</strong>
 		<ul class="svelte-3ofmds"><li><a href="mailto:jeanine@thebarnatoldcolony.com" class="svelte-3ofmds">jeanine@thebarnatoldcolony.com</a></li>
@@ -88,21 +79,21 @@
 </aside>
 
 
-		<script type="module" data-sveltekit-hydrate="gasrwh">
-		import { start } from "/_app/immutable/start-b1e521c9.js";
+		<script type="module" data-sveltekit-hydrate="wxsdcs">
+		import { start } from "/_app/immutable/start-21b28296.js";
 		start({
-			target: document.querySelector('[data-sveltekit-hydrate="gasrwh"]').parentNode,
+			target: document.querySelector('[data-sveltekit-hydrate="wxsdcs"]').parentNode,
 			paths: {"base":"","assets":""},
 			session: {},
 			route: true,
 			spa: false,
-			trailing_slash: "never",
+			trailing_slash: "always",
 			hydrate: {
 				status: 200,
 				error: null,
-				nodes: [2, 0, 5],
+				nodes: [2, 0, 3, 9],
 				params: {},
-				routeId: "contact"
+				routeId: "gallery"
 			}
 		});
 	</script>

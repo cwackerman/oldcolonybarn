@@ -19,8 +19,11 @@ const config = {
 	kit: {
 		adapter: adapter({
 			pages: "docs",
-			assets: "docs"
+			assets: "docs",
+			fallback: null,
+			precompress: false
 		}),
+		trailingSlash: 'always',
 		prerender: {
 			default: true
 		}
