@@ -1,1 +1,0 @@
-import{S as o,i as s,s as n,W as l,h as d,B as e}from"../../../chunks/index-8b5cb5d1.js";function r(a){return{c(){this.h()},l(t){l('[data-svelte="svelte-a86d7w"]',document.head).forEach(d),this.h()},h(){document.title="Photo Gallery | The Barn at Old Colony"},m:e,p:e,i:e,o:e,d:e}}class i extends o{constructor(t){super(),s(this,t,null,r,n,{})}}export{i as default};

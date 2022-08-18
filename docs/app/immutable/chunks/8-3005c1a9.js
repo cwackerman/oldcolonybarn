@@ -1,1 +1,0 @@
-import{default as e}from"../components/pages/faq/_page.svelte-dc640afe.js";import"./index-8b5cb5d1.js";import"./Container-da5fad5a.js";/* empty css                                                */export{e as component};

@@ -1,6 +1,7 @@
 <script>
 	import PageFooter from '$lib/PageFooter.svelte';
 	import PageHeader from '$lib/PageHeader.svelte';
+	import '../app.css';
 </script>
 
 <PageHeader />

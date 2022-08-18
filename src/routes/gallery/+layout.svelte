@@ -1,7 +1,6 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
 	import Container from '$lib/Container.svelte';
-	import Image from 'svimg';
 
 	type Masonry = Array<Array<URL>>;
 
@@ -10,35 +9,15 @@
 			as: 'url',
 			eager: true
 		})
-	).map(function (path) {
-		return path.replace(new URL('./photos/', import.meta.url).pathname, '');
+	).map(function (photo) {
+		return new URL(photo, import.meta.url);
 	});
 
-	console.debug(photos);
-
 	let clientWidth = 0;
-	let columnWidth = 0;
 	let columns: Masonry = [];
 
-	const filters = new Set<string>();
-
-	for (const photo of photos) {
-		const folder = photo.split('/')[0];
-		filters.add(folder);
-	}
-
-	const activeFilters = new Set(filters);
-
 	function generateColumns() {
-		const items = photos.filter((photo) => {
-			for (const filter of activeFilters) {
-				if (photo.startsWith(filter)) {
-					return true;
-				}
-			}
-
-			return false;
-		});
+		const items = photos;
 
 		const minColWidth = 300;
 
@@ -51,26 +30,12 @@
 			1
 		);
 
-		columnWidth = clientWidth / length;
+		const columnWidth = clientWidth / length;
 
 		columns = items.reduce(function (memo, photo, index) {
-			const url = new URL(`./photos/${photo}`, import.meta.url);
-			memo[index % length].push(url);
+			memo[index % length].push(photo);
 			return memo;
 		}, Array.from({ length }, () => []) as Masonry);
-
-		console.debug(columns);
-	}
-
-	function toggleFilter(event: Event) {
-		if (event.target instanceof HTMLInputElement) {
-			if (event.target.checked) {
-				activeFilters.add(event.target.value);
-			} else {
-				activeFilters.delete(event.target.value);
-			}
-			generateColumns();
-		}
 	}
 
 	onMount(generateColumns);
@@ -81,22 +46,6 @@
 <Container>
 	<h1>Photo Gallery</h1>
 </Container>
-
-<form>
-	{#each Array.from(filters) as filter}
-		<input
-			hidden
-			id={filter}
-			type="checkbox"
-			checked={activeFilters.has(filter)}
-			on:change={toggleFilter}
-			value={filter}
-		/>
-		<label class="tag" for={filter}>
-			{filter}
-		</label>
-	{/each}
-</form>
 
 <div class="gallery" bind:clientWidth>
 	{#each columns as column}
@@ -131,27 +80,5 @@
 		height: auto;
 		display: block;
 		width: 100%;
-	}
-
-	form {
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: center;
-		margin: 3rem auto;
-		gap: 1rem;
-	}
-
-	.tag {
-		background-color: hsl(333, 12%, 95%);
-		border-radius: 1rem;
-		cursor: pointer;
-		line-height: 1;
-		padding: 0.5rem 1rem;
-		user-select: none;
-	}
-
-	input:checked + .tag {
-		background-color: var(--color-brand);
-		color: var(--color-text-inverse);
 	}
 </style>
