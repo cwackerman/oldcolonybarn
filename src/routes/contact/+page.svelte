@@ -11,67 +11,52 @@
 <Container>
 	<h1>Contact</h1>
 
-	<form
-		action="https://script.google.com/macros/s/AKfycbxen_IGrnOCbss7apckNd1ZrTMSIdOCRXaFpnnNCqArSHqZRgNX7dDeQNntuT8rbsR5Lg/exec"
-		accept-charset="UTF-8"
-		disabled={submitting ? true : undefined}
-		enctype="multipart/form-data"
-		method="POST"
-		on:submit={async (event) => {
-			event.preventDefault();
-			submitting = true;
-			const form = event.currentTarget;
-			try {
-				await fetch(form.action, {
-					method: form.method,
-					body: new FormData(form)
-				});
-				form.reset();
-				toasts.add({
-					duration: 5000,
-					level: 'success',
-					message: 'Thanks for your submission!'
-				});
-			} catch (error) {
-				console.error(error);
-				toasts.add({
-					duration: 5000,
-					level: 'error',
-					message: 'Something went wrong. Please try again.'
-				});
-			} finally {
-				submitting = false;
-			}
-		}}
-	>
+	<form name="Contact" method="POST" data-netlify="true">
+		<input type="hidden" name="form-name" value="Contact" />
+
 		<div class="row">
 			<label for="name">
 				<span>Name(s)</span>
-				<input type="text" id="name" name="name" autocomplete="name" required />
+				<input
+					type="text"
+					id="name"
+					name="name"
+					autocomplete="name"
+					required
+					placeholder="John Doe and Jane Doe"
+				/>
 			</label>
 		</div>
 
 		<div class="row">
 			<label for="email">
 				<span>Email Address</span>
-				<input type="email" id="email" name="email" autocomplete="email" required />
+				<input
+					type="email"
+					id="email"
+					name="email"
+					autocomplete="email"
+					required
+					placeholder="hello@example.com"
+				/>
 			</label>
 
 			<label for="phone">
 				<span>Phone Number</span>
-				<input type="tel" id="phone" name="phone" autocomplete="tel" />
+				<input type="tel" id="phone" name="phone" autocomplete="tel" placeholder="(530) 865-xxxx" />
 			</label>
 		</div>
 
 		<div class="row">
 			<label for="type">
-				<datalist id="event-type-suggestions">
-					<option>Wedding</option>
-					<option>Reunion</option>
-					<option>Fundraiser</option>
-				</datalist>
 				<span>Event Type</span>
-				<input type="text" id="type" name="type" list="event-type-suggestions" />
+				<input
+					type="text"
+					id="type"
+					name="type"
+					list="event-type-suggestions"
+					placeholder="Wedding, Reunion, Fundraiser, etc..."
+				/>
 			</label>
 		</div>
 

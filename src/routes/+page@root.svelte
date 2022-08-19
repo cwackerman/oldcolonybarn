@@ -15,7 +15,7 @@
 	<h1>Let's have a rousin' good time!</h1>
 	<a class="cta" href="/contact">Contact Us</a>
 
-	<video autoplay muted>
+	<video autoplay loop muted playsinline>
 		<source type="video/mp4" src={hero} />
 	</video>
 </div>

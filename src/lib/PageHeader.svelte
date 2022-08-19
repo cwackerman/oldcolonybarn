@@ -68,7 +68,7 @@
 		padding: 1rem;
 		position: relative;
 		width: 100%;
-		z-index: 2;
+		z-index: 10;
 	}
 
 	header > nav {
@@ -94,8 +94,13 @@
 		z-index: 1;
 	}
 
-	summary::marker {
-		content: none;
+	summary {
+		list-style: none;
+	}
+
+	summary::marker,
+	summary::-webkit-details-marker {
+		display: none;
 	}
 
 	details > nav {
@@ -105,9 +110,6 @@
 		left: 0;
 		top: 100%;
 		right: 0;
-		transform: translateY(-100%);
-		/* transition: transform 250ms; */
-		z-index: -1;
 		display: flex;
 		flex-direction: column;
 	}
@@ -123,10 +125,6 @@
 		color: var(--color-text);
 	}
 
-	details[open] > nav {
-		transform: translateY(0);
-	}
-
 	svg {
 		display: block;
 		fill: currentColor;
@@ -139,8 +137,10 @@
 		text-decoration: none;
 	}
 
-	a:hover {
-		color: var(--color-text);
+	@media (pointer: fine) {
+		a:hover {
+			color: var(--color-text);
+		}
 	}
 
 	@media (min-width: 80ch) {
