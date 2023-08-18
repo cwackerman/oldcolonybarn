@@ -34,13 +34,6 @@
 			</p>
 			<p>We look forward to helping you choose the perfect setting for your special day.</p>
 			<p>
-				Join us on a summer evening for one of our sunset concerts in the corral, where families can
-				bring chairs and gaze at the colorful horizon as the sun sets behind the buttes, all while
-				listening to good vibes from our local bands. Vendors from the valley also come out to serve
-				yummy foods and spirits. Whether you choose to play games, relax and listen to the tunes, or
-				stomp and dance under the stars, you are sure to have a rousin’ good time.
-			</p>
-			<p>
 				At Old Colony we also are eager to help you with your next fundraiser, reunion, prom, party,
 				shower, casino night, or any suggested event you have in mind. <a
 					href="https://forms.gle/12m5Bway6AP18Ssv7"
