@@ -1,6 +1,5 @@
 <script>
 	import { page } from '$app/stores';
-	console.debug($page.params.photo);
 </script>
 
 <svelte:head>
