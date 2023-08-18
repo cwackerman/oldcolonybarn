@@ -17,6 +17,8 @@
 			The Barn — 5,000 sq feet of dining and/or ceremonial space, dimmable chandeliers, sconces, and
 			string lighting, choice of ceremony arbors, two large barn doors for ceremonies.
 		</li>
+		<li>30 custom solid wood 60” round tables (seat 8)</li>
+		<li>30 diamond-white Lamour table linens</li>
 		<li>
 			The Mangers — a concrete space complete with eight wine barrels and 16 stools, water trough
 			for ice and drinks, windshades, dj space, beautiful handmade redwood countertop portable bar.
@@ -29,32 +31,34 @@
 			on your event day, the corral is ideal for renting tents as a covered location for your
 			guests.
 		</li>
+		<li>Parking lot</li>
 		<li>
 			The Cross at the Point ~ this area makes for an ideal spot for your ceremony as it overlooks
 			the beautiful buttes and Black Butte Lake. You will need to transport your chairs to the venue
 			after your ceremony.
 		</li>
 		<li>
-			225 beautiful chiavari solid wood chairs with 225 white cushions (optional) or 140 black
-			cushions.
+			250 beautiful chiavari solid wood chairs with 250 white tie-on cushions (optional) or 150
+			black cushions.
 		</li>
-		<li>8 vintage white farm chairs, solid wood</li>
-		<li>30 custom solid wood 60” round tables (seat 8)</li>
-		<li>Two rectangular white resin tables</li>
-		<li>
-			Games: 2 ping-pong tables, 2 cornhole sets, various large yard games such as horseshoes,
-			dominoes, 4-in-a-row, dice, pickleball
-		</li>
+		<li>Four farm tables, 9'</li>
+		<li>14 vintage white farm chairs, solid wood</li>
+		<li>13' portable redwood bar</li>
+		<li>11' redwood charcuterie board</li>
+		<li>Various yard games</li>
+		<li>8 sheer white banners to hang from the eaves</li>
 		<li>3 propane heaters</li>
 		<li>Floating warm-lit candles for the water trough</li>
 		<li>1 portable fire pit with wood and screen cover</li>
 		<li>16 Resin Adirondack chairs</li>
-		<li>Parking lot</li>
+		<li>6-foot wooden stand-up LOVE letters, light-up</li>
+		<li>1892 original doctor's buggy for photo ops</li>
 	</ul>
 	<p>
 		Presently, we do not provide bridal suites, restrooms, or kitchen facilities, but we look
 		forward to helping you locate local providers.
 	</p>
+	<p>Come enjoy a tour with us and see all the additional items included.</p>
 
 	<h2 id="tour">Can we see it beforehand?</h2>
 	<p>
