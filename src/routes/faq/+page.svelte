@@ -76,6 +76,7 @@
 		<li>1&ndash;100 guests = $2500.</li>
 		<li>101&ndash;200 guests = $3000.</li>
 		<li>200&ndash;250 guests = $3500</li>
+		<li>250&ndash;300 guests = $4000</li>
 	</ul>
 	<p>
 		See the <a href="#offering">What is Included</a> section to read what you receive when you book the
