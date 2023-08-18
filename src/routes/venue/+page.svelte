@@ -18,7 +18,7 @@
 				Welcome to The Barn at Old Colony. We are an indoor-outdoor wedding and event center located
 				eight miles west of Orland off I-5 and just across the road from the Black Butte Dam
 				Observation Point. We are a large venue and can accommodate intimate groups as well as up to
-				250 or more guests.
+				300 guests.
 			</p>
 			<p>
 				At Old Colony we offer several ceremony options: the more than one hundred-year-old hay barn
