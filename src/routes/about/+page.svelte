@@ -1,5 +1,6 @@
 <script>
 	import Container from '$lib/Container.svelte';
+	import ranch from './ranch.jpeg';
 </script>
 
 <svelte:head>
@@ -8,6 +9,10 @@
 
 <Container>
 	<h1>About</h1>
+</Container>
+
+<Container>
+	<img src={ranch} />
 
 	<p>
 		Our family has many memories of the old hay barn. Our three children loved climbing the tall,
@@ -60,3 +65,11 @@
 		cousins Berton and Carol Bertagna to become the Old Colony Ranch.
 	</p>
 </Container>
+
+<style>
+	img {
+		display: block;
+		height: auto;
+		width: 100%;
+	}
+</style>
