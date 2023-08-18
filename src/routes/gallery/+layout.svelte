@@ -52,6 +52,7 @@
 		<div class="column">
 			{#each column as item}
 				<a href={item.href} target="_blank">
+					<!-- svelte-ignore a11y-missing-attribute -->
 					<img src={item.href} />
 				</a>
 			{/each}

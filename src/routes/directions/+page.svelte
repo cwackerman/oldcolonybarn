@@ -11,6 +11,7 @@
 <Container>
 	<h1>Directions</h1>
 
+	<!-- svelte-ignore a11y-media-has-caption -->
 	<video controls>
 		<source src={mp4} />
 	</video>

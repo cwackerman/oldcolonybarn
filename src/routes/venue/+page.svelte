@@ -44,7 +44,7 @@
 		</article>
 
 		<aside>
-			<img src={barn} />
+			<img alt="The inside of the old hay barn" src={barn} />
 		</aside>
 	</div>
 </Container>

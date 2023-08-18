@@ -12,7 +12,7 @@
 </Container>
 
 <Container>
-	<img src={ranch} />
+	<img alt="Aerial photograph of the Old Colony ranch" src={ranch} />
 
 	<p>
 		Our family has many memories of the old hay barn. Our three children loved climbing the tall,

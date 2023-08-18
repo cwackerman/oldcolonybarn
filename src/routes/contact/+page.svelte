@@ -83,10 +83,6 @@
 		margin-block: 2em;
 	}
 
-	form[disabled] {
-		opacity: 0.5;
-	}
-
 	.row {
 		display: flex;
 		flex-direction: row;
