@@ -5,7 +5,7 @@
 	type Masonry = Array<Array<URL>>;
 
 	const photos = Object.values(
-		import.meta.glob('./photos/{Engagement,Summer Concerts,Wedding}/*.{jpg,jpeg}', {
+		import.meta.glob('./photos/*.{jpg,jpeg}', {
 			as: 'url',
 			eager: true
 		})
