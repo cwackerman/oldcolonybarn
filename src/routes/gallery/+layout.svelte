@@ -54,7 +54,7 @@
 				<a href={item.href} target="_blank">
 					{#if item.href.endsWith('.mp4')}
 						<!-- svelte-ignore a11y-media-has-caption -->
-						<video muted autoplay>
+						<video muted autoplay loop>
 							<source src={item.href} type="video/mp4" />
 						</video>
 					{:else}
