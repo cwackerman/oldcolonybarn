@@ -52,8 +52,15 @@
 		<div class="column">
 			{#each column as item}
 				<a href={item.href} target="_blank">
-					<!-- svelte-ignore a11y-missing-attribute -->
-					<img src={item.href} />
+					{#if item.href.endsWith('.mp4')}
+						<!-- svelte-ignore a11y-media-has-caption -->
+						<video muted autoplay>
+							<source src={item.href} type="video/mp4" />
+						</video>
+					{:else}
+						<!-- svelte-ignore a11y-missing-attribute -->
+						<img src={item.href} />
+					{/if}
 				</a>
 			{/each}
 		</div>
@@ -76,7 +83,8 @@
 		width: 100%;
 	}
 
-	img {
+	img,
+	video {
 		display: block;
 		height: auto;
 		display: block;
