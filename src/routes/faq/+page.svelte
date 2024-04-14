@@ -90,7 +90,6 @@
 	<h2 id="hours">What are the event hours?</h2>
 	<p>
 		Because our ranch is located in a rural, country setting on private property, talk to us about
-		curfews and noise restrictions. You will find that we are very accommodating. The venue is yours
-		Friday late afternoon thru Sunday afternoon.
+		curfews and noise restrictions. The venue is yours Friday late afternoon thru Sunday afternoon.
 	</p>
 </Container>
