@@ -3,7 +3,7 @@
 		<strong>The Barn at Old Colony</strong>
 		<ul>
 			<li><a href="mailto:jeanine@thebarnatoldcolony.com">jeanine@thebarnatoldcolony.com</a></li>
-			<li><a href="tel:+15303301590">(530) 330-1589</a></li>
+			<li><a href="tel:+15303301589">(530) 330-1589</a></li>
 		</ul>
 		<a
 			href="https://www.google.com/maps/place/19409+Newville+Rd,+Orland,+CA+95963/@39.8089505,-122.3294629,580m/data=!3m1!1e3!4m5!3m4!1s0x8082f64fd21c9cbd:0x530b97720c1889f4!8m2!3d39.8017412!4d-122.3242979"
